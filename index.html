@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Krishal Poudel — Student, AI Enthusiast, Market Analyst & Lifelong Learner based in Chitwan, Nepal. Exploring AI, financial markets, and behavioral psychology." />
+  <meta name="author" content="Krishal Poudel" />
+  <meta name="keywords" content="Krishal Poudel, AI, Machine Learning, Trading, Financial Markets, Data Analysis, Nepal, Portfolio, Chitwan" />
+  <meta property="og:title" content="Krishal Poudel — Portfolio" />
+  <meta property="og:description" content="AI Enthusiast • Market Analyst • Lifelong Learner" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="krishal.jpeg" />
+  <title>Krishal Poudel — AI Enthusiast & Market Analyst</title>
+  <link rel="icon" type="image/jpeg" href="krishal.jpeg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <div class="bg-mountains"></div>
+  <div class="bg-gradient-orb orb-1"></div>
+  <div class="bg-gradient-orb orb-2"></div>
+  <canvas id="particles-canvas"></canvas>
+
+  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+
+  <div id="loader" class="loader">
+    <div class="loader-content">
+      <div class="loader-mark">KP</div>
+      <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+    </div>
+  </div>
+
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-brand">
+        <span class="logo-mark">KP</span>
+        <span class="logo-text">Krishal Poudel</span>
+      </div>
+
+      <div class="sidebar-profile">
+        <div class="sidebar-avatar">
+          <img src="krishal.jpeg" alt="Krishal Poudel" />
+        </div>
+        <h2>Krishal Poudel</h2>
+        <p>Student<br />Chitwan, Nepal</p>
+      </div>
+
+      <div class="sidebar-socials">
+        <a href="https://www.linkedin.com/in/krishal-poudel-601952396?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener" class="sidebar-social">
+          <span><i class="fab fa-linkedin-in"></i> LinkedIn</span>
+          <i class="fas fa-arrow-up-right-from-square"></i>
+        </a>
+        <a href="https://github.com/Krishal-Tech" target="_blank" rel="noopener" class="sidebar-social">
+          <span><i class="fab fa-github"></i> GitHub</span>
+          <i class="fas fa-arrow-up-right-from-square"></i>
+        </a>
+        <a href="mailto:krishalp660812@gmail.com" class="sidebar-social">
+          <span><i class="fas fa-envelope"></i> Email</span>
+          <i class="fas fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
+
+      <nav class="sidebar-nav" aria-label="Primary">
+        <button class="side-link active" data-nav="home"><i class="fas fa-house"></i> Home</button>
+        <button class="side-link" data-nav="projects"><i class="fas fa-layer-group"></i> Projects</button>
+        <button class="side-link" data-nav="about"><i class="fas fa-user"></i> About</button>
+        <button class="side-link" data-nav="skills"><i class="fas fa-code"></i> Skills</button>
+        <button class="side-link" data-nav="journey"><i class="fas fa-route"></i> Journey</button>
+        <button class="side-link" data-nav="contact"><i class="fas fa-envelope"></i> Contact</button>
+      </nav>
+
+      <blockquote class="sidebar-quote">
+        “Continuous learning and small improvements create long-term results.”
+      </blockquote>
+    </aside>
+
+    <div class="workspace">
+      <header class="topbar">
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="top-nav" aria-label="Sections">
+          <button class="top-link active" data-nav="home">Home</button>
+          <button class="top-link" data-nav="projects">Projects</button>
+          <button class="top-link" data-nav="about">About</button>
+          <button class="top-link" data-nav="skills">Skills</button>
+          <button class="top-link" data-nav="journey">Journey</button>
+          <button class="top-link" data-nav="contact">Contact</button>
+        </nav>
+        <div class="topbar-actions">
+          <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme" type="button">
+            <i class="fas fa-moon"></i>
+          </button>
+          <a href="#contact" class="btn btn-connect" data-nav="contact">Let’s Connect</a>
+        </div>
+      </header>
+
+      <main class="workspace-main" id="workspace-main">
+        <!-- HOME -->
+        <section class="view is-active" id="view-home" data-view="home">
+          <div class="hero-row">
+            <div class="hero-copy panel">
+              <p class="hero-kicker">Hello, I’m 👋</p>
+              <h1 class="hero-name">Krishal Poudel</h1>
+              <h2 class="hero-headline">Exploring <span>AI, Markets &amp; Psychology.</span></h2>
+              <p class="hero-desc">
+                A <strong>17-year-old</strong> from <strong>Chitwan, Nepal</strong> — exploring the power of
+                <strong>AI</strong>, <strong>financial markets</strong>, and <strong>behavioral psychology</strong>
+                to build practical solutions and continuous growth.
+              </p>
+              <div class="hero-cta">
+                <button class="btn btn-primary" data-nav="projects">View My Projects <i class="fas fa-arrow-right"></i></button>
+                <button class="btn btn-ghost" data-nav="about">Discover More</button>
+              </div>
+              <div class="hero-socials">
+                <a href="https://www.linkedin.com/in/krishal-poudel-601952396?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/Krishal-Tech" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.facebook.com/share/1GJ61K62F1/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/krishalpoudel10?igsh=MWh1MzRycW1qZHVsag" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:krishalp660812@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+              </div>
+            </div>
+
+            <div class="hero-photo panel">
+              <img src="krishal.jpeg" alt="Krishal Poudel" />
+              <div class="photo-pin"><i class="fas fa-location-dot"></i> Chitwan, Nepal</div>
+            </div>
+
+            <aside class="focus-card panel">
+              <p class="focus-label">// currently focused on</p>
+              <ul class="focus-list">
+                <li>
+                  <span class="focus-icon"><i class="fas fa-brain"></i></span>
+                  <div>
+                    <strong>AI &amp; ML</strong>
+                    <span>Exploratory research, prompt engineering, and intelligent automation.</span>
+                  </div>
+                </li>
+                <li>
+                  <span class="focus-icon"><i class="fas fa-chart-bar"></i></span>
+                  <div>
+                    <strong>Data Analysis</strong>
+                    <span>Identify patterns, inform decisions, and make sense of complex systems.</span>
+                  </div>
+                </li>
+                <li>
+                  <span class="focus-icon"><i class="fas fa-chart-line"></i></span>
+                  <div>
+                    <strong>Financial Markets</strong>
+                    <span>Market dynamics, price action, Forex &amp; technical analysis.</span>
+                  </div>
+                </li>
+              </ul>
+              <p class="focus-quote">“Continuous learning and small improvements create long-term results.” <cite>— Krishal Poudel</cite></p>
+            </aside>
+          </div>
+
+          <div class="section-head">
+            <h3><span class="head-bar"></span> Featured Projects</h3>
+            <button class="text-link" data-nav="projects">View All Projects <i class="fas fa-arrow-right"></i></button>
+          </div>
+
+          <div class="featured-grid">
+            <article class="project-tile panel">
+              <div class="tile-preview preview-ai">
+                <i class="fas fa-terminal"></i>
+                <span>JARVIS</span>
+              </div>
+              <h4>Virtual Private AI Assistant</h4>
+              <p>Exploring intelligent assistant architectures using prompt engineering, Python and LLM model and workflow.</p>
+              <div class="chip-row">
+                <span>Python</span><span>Prompt Engineering</span><span>LLM</span>
+              </div>
+              <a class="tile-link" href="https://github.com/Krishal-Tech/JARVIS-Local-virtual-private-assistant-" target="_blank" rel="noopener">View Project <i class="fab fa-github"></i></a>
+            </article>
+
+            <article class="project-tile panel">
+              <div class="tile-preview preview-web">
+                <i class="fas fa-file-alt"></i>
+                <span>Research</span>
+              </div>
+              <h4>Prompt Engineering Study</h4>
+              <p>Systematic study of prompt design, chain-of-thought, and LLM reasoning patterns.</p>
+              <div class="chip-row">
+                <span>AI</span><span>LLMs</span><span>Prompting</span>
+              </div>
+            </article>
+
+            <article class="project-tile panel">
+              <div class="tile-preview preview-club">
+                <i class="fas fa-laptop-code"></i>
+                <span>Tech Club</span>
+              </div>
+              <h4>Orchid Tech Club Website</h4>
+              <p>Website for the Orchid Tech Club at Orchid College of Science and Management Chitwan.</p>
+              <div class="chip-row">
+                <span>Website</span><span>Live</span>
+              </div>
+              <a class="tile-link" href="https://tech.orchidchitwan.edu.np/" target="_blank" rel="noopener">Live Demo <i class="fas fa-arrow-up-right-from-square"></i></a>
+            </article>
+
+            <article class="project-tile panel">
+              <div class="tile-preview preview-auto">
+                <i class="fas fa-bolt"></i>
+                <span>Python</span>
+              </div>
+              <h4>Automation Experiments</h4>
+              <p>Building small Python scripts to automate repetitive workflows and learn by doing.</p>
+              <div class="chip-row">
+                <span>Python</span><span>Automation</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="home-bottom">
+            <article class="panel about-mini">
+              <h3>About Me</h3>
+              <p>I’m a <strong>17-year-old student</strong> from <strong>Chitwan, Nepal</strong>, building expertise at the intersection of <strong>Artificial Intelligence</strong>, <strong>Financial Markets</strong>, and <strong>Behavioral Psychology</strong>.</p>
+              <p>My focus is on developing <strong>leadership</strong>, <strong>strategic thinking</strong>, and <strong>problem-solving</strong> skills — transforming knowledge into practical, real-world solutions.</p>
+              <button class="btn btn-ghost btn-sm" data-nav="about">Learn More</button>
+              <div class="mini-meta">
+                <div><i class="fas fa-graduation-cap"></i><div><small>Role</small><span>Student</span></div></div>
+                <div><i class="fas fa-location-dot"></i><div><small>Location</small><span>Chitwan, Nepal</span></div></div>
+                <div><i class="fas fa-envelope"></i><div><small>Email</small><span>krishalp660812@gmail.com</span></div></div>
+              </div>
+            </article>
+
+            <article class="panel skills-mini">
+              <h3><i class="fas fa-code"></i> Skills &amp; Technologies</h3>
+              <div class="skill-icons">
+                <div class="skill-icon"><i class="fab fa-python"></i><span>Python</span></div>
+                <div class="skill-icon"><i class="fas fa-robot"></i><span>Prompt Eng.</span></div>
+                <div class="skill-icon"><i class="fas fa-brain"></i><span>AI &amp; ML</span></div>
+                <div class="skill-icon"><i class="fas fa-chart-line"></i><span>Data Analysis</span></div>
+                <div class="skill-icon"><i class="fas fa-lightbulb"></i><span>Psychology</span></div>
+                <div class="skill-icon"><i class="fas fa-code"></i><span>Problem Solving</span></div>
+                <div class="skill-icon"><i class="fas fa-comments"></i><span>Communication</span></div>
+                <div class="skill-icon"><i class="fas fa-chart-candlestick"></i><span>Markets</span></div>
+              </div>
+              <button class="text-link" data-nav="skills">More Skills <i class="fas fa-arrow-right"></i></button>
+            </article>
+
+            <article class="panel journey-mini">
+              <h3>My Journey</h3>
+              <ol class="mini-timeline">
+                <li>
+                  <strong>Webpage</strong>
+                  <span>2022 — Now · Started studying how to create and deploy webpages. The start of my Tech Career.</span>
+                </li>
+                <li>
+                  <strong>Trading</strong>
+                  <span>2024 — Now · Markets, technical analysis, candlestick patterns, and risk management.</span>
+                </li>
+                <li>
+                  <strong>Python &amp; Prompt Engineering</strong>
+                  <span>2025 — Now · Data science, automation, AI workflows, and communicating with LLMs.</span>
+                </li>
+                <li>
+                  <strong>What’s Next</strong>
+                  <span>Future · Machine learning, quantitative finance, and behavioral psychology in real systems.</span>
+                </li>
+              </ol>
+              <button class="text-link" data-nav="journey">View Details <i class="fas fa-arrow-right"></i></button>
+            </article>
+
+            <article class="panel notes-mini">
+              <h3>Roles &amp; Focus</h3>
+              <ul class="notes-list">
+                <li><i class="fas fa-user-graduate"></i> <span>Student</span></li>
+                <li><i class="fas fa-microchip"></i> <span>AI Enthusiast</span></li>
+                <li><i class="fas fa-chart-line"></i> <span>Market Analyst</span></li>
+                <li><i class="fas fa-book-open"></i> <span>Lifelong Learner</span></li>
+                <li><i class="fas fa-robot"></i> <span>Prompt Engineer</span></li>
+                <li><i class="fas fa-database"></i> <span>Trading &amp; Data Analyst</span></li>
+              </ul>
+              <div class="stat-row">
+                <div><b class="stat-num" data-target="3">0</b><small>Core Focus Areas</small></div>
+                <div><b class="stat-num" data-target="365">0</b><small>Days Learning</small></div>
+                <div><b class="stat-num" data-target="17">0</b><small>Years Young</small></div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="view" id="view-projects" data-view="projects">
+          <div class="page-header">
+            <span class="section-label">04 / Projects</span>
+            <h2>Learning <span class="gradient-text">Projects &amp; Experiments</span></h2>
+            <p>Concepts I’m actively exploring and building</p>
+          </div>
+          <div class="projects-grid">
+            <article class="project-card panel">
+              <div class="project-icon"><i class="fas fa-terminal"></i></div>
+              <div class="project-tag">AI</div>
+              <h3>Virtual Private AI Assistant</h3>
+              <p>Exploring intelligent assistant architectures using prompt engineering, Python and LLM model and workflow.</p>
+              <div class="project-footer">
+                <span class="project-status"><span class="status-dot"></span> Complete</span>
+                <div class="project-actions">
+                  <a class="project-action" href="https://github.com/Krishal-Tech/JARVIS-Local-virtual-private-assistant-" target="_blank" rel="noopener">View Project <i class="fab fa-github"></i></a>
+                  <button class="project-action project-action-demo" type="button" disabled title="Add this project's live demo URL in index.html to enable">Live Demo <i class="fas fa-arrow-up-right-from-square"></i></button>
+                </div>
+              </div>
+            </article>
+            <article class="project-card panel">
+              <div class="project-icon"><i class="fas fa-laptop-code"></i></div>
+              <div class="project-tag">Website</div>
+              <h3>Orchid Tech Club Website</h3>
+              <p>Website for the Orchid Tech Club at Orchid College of Science and Management Chitwan.</p>
+              <div class="project-footer">
+                <span class="project-status"><span class="status-dot"></span> Live</span>
+                <div class="project-actions">
+                  <button class="project-action" type="button" disabled title="Add this project's repository URL in index.html to enable">View Project <i class="fab fa-github"></i></button>
+                  <a class="project-action project-action-demo" href="https://tech.orchidchitwan.edu.np/" target="_blank" rel="noopener">Live Demo <i class="fas fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
+            </article>
+            <article class="project-card panel">
+              <div class="project-icon"><i class="fas fa-bolt"></i></div>
+              <div class="project-tag">Python</div>
+              <h3>Automation Experiments</h3>
+              <p>Building small Python scripts to automate repetitive workflows and learn by doing.</p>
+              <div class="project-footer">
+                <span class="project-status"><span class="status-dot"></span> Continuous Integration</span>
+                <div class="project-actions">
+                  <button class="project-action" type="button" disabled title="Add this project's repository URL in index.html to enable">View Project <i class="fab fa-github"></i></button>
+                  <button class="project-action project-action-demo" type="button" disabled title="Add this project's live demo URL in index.html to enable">Live Demo <i class="fas fa-arrow-up-right-from-square"></i></button>
+                </div>
+              </div>
+            </article>
+            <article class="project-card panel">
+              <div class="project-icon"><i class="fas fa-user-graduate"></i></div>
+              <div class="project-tag">Research</div>
+              <h3>Personal Research</h3>
+              <p>Self-driven research at the intersection of AI, finance, and human behavior.</p>
+              <div class="project-footer">
+                <span class="project-status"><span class="status-dot"></span> Continuous Integration</span>
+                <div class="project-actions">
+                  <button class="project-action" type="button" disabled title="Add this project's repository URL in index.html to enable">View Project <i class="fab fa-github"></i></button>
+                  <button class="project-action project-action-demo" type="button" disabled title="Add this project's live demo URL in index.html to enable">Live Demo <i class="fas fa-arrow-up-right-from-square"></i></button>
+                </div>
+              </div>
+            </article>
+            <article class="project-card panel">
+              <div class="project-icon"><i class="fas fa-file-alt"></i></div>
+              <div class="project-tag">AI</div>
+              <h3>Prompt Engineering Study</h3>
+              <p>Systematic study of prompt design, chain-of-thought, and LLM reasoning patterns.</p>
+              <div class="project-footer">
+                <span class="project-status"><span class="status-dot"></span> Continuous Integration</span>
+                <div class="project-actions">
+                  <button class="project-action" type="button" disabled title="Add this project's repository URL in index.html to enable">View Project <i class="fab fa-github"></i></button>
+                  <button class="project-action project-action-demo" type="button" disabled title="Add this project's live demo URL in index.html to enable">Live Demo <i class="fas fa-arrow-up-right-from-square"></i></button>
+                </div>
+              </div>
+            </article>
+            <article class="project-card panel">
+              <div class="project-icon"><i class="fas fa-lightbulb"></i></div>
+              <div class="project-tag">Psychology</div>
+              <h3>Behavioral Finance</h3>
+              <p>Investigating how cognitive biases shape decision-making in financial markets.</p>
+              <div class="project-footer">
+                <span class="project-status"><span class="status-dot"></span> Continuous Integration</span>
+                <div class="project-actions">
+                  <button class="project-action" type="button" disabled title="Add this project's repository URL in index.html to enable">View Project <i class="fab fa-github"></i></button>
+                  <button class="project-action project-action-demo" type="button" disabled title="Add this project's live demo URL in index.html to enable">Live Demo <i class="fas fa-arrow-up-right-from-square"></i></button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="view" id="view-about" data-view="about">
+          <div class="page-header">
+            <span class="section-label">01 / About</span>
+            <h2>About <span class="gradient-text">Me</span></h2>
+          </div>
+          <div class="about-page">
+            <div class="about-photo panel">
+              <img src="krishal.jpeg" alt="Krishal Poudel" />
+              <div class="float-chip chip-a"><i class="fas fa-brain"></i> AI Enthusiast</div>
+              <div class="float-chip chip-b"><i class="fas fa-chart-line"></i> Market Analyst</div>
+            </div>
+            <div class="about-copy panel">
+              <h3>Hi, I’m <span class="gradient-text">Krishal</span> 👋</h3>
+              <p>I’m a <strong>17-year-old student</strong> from <strong>Chitwan, Nepal</strong>, building expertise at the intersection of <strong>Artificial Intelligence</strong>, <strong>Financial Markets</strong>, and <strong>Behavioral Psychology</strong>.</p>
+              <p>My focus is on developing <strong>leadership</strong>, <strong>strategic thinking</strong>, and <strong>problem-solving</strong> skills — transforming knowledge into practical, real-world solutions through continuous learning and disciplined experimentation.</p>
+              <p>I believe the future belongs to those who learn how to learn. Every day I push myself to understand <em>why</em> things work — from the math behind algorithms, to the psychology behind our decisions, to the patterns that shape human behavior.</p>
+              <div class="about-stats">
+                <div class="stat-card"><div class="stat-num" data-target="3">0</div><div class="stat-label">Core Focus Areas</div></div>
+                <div class="stat-card"><div class="stat-num" data-target="365">0</div><div class="stat-label">Days Learning</div></div>
+                <div class="stat-card"><div class="stat-num" data-target="17">0</div><div class="stat-label">Years Young</div></div>
+              </div>
+              <button class="btn btn-primary" data-nav="journey">Explore My Journey <i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+          <div class="philosophy-card panel">
+            <span class="philosophy-label">Philosophy</span>
+            <blockquote>Continuous learning and small improvements create long-term results.</blockquote>
+            <div class="philosophy-author">— Krishal Poudel</div>
+          </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section class="view" id="view-skills" data-view="skills">
+          <div class="page-header">
+            <span class="section-label">02 / Skills</span>
+            <h2>My <span class="gradient-text">Toolkit</span></h2>
+            <p>Tools, languages, and frameworks I work with daily</p>
+          </div>
+          <div class="skills-grid">
+            <article class="skill-card panel" style="--skill-color:#3b82f6">
+              <div class="skill-icon-wrap"><i class="fab fa-python"></i></div>
+              <h3>Python</h3>
+              <p>Scripting, automation &amp; data</p>
+            </article>
+            <article class="skill-card panel" style="--skill-color:#22d3ee">
+              <div class="skill-icon-wrap"><i class="fas fa-robot"></i></div>
+              <h3>Prompt Engineering</h3>
+              <p>LLM design &amp; optimization</p>
+            </article>
+            <article class="skill-card panel" style="--skill-color:#ec4899">
+              <div class="skill-icon-wrap"><i class="fas fa-brain"></i></div>
+              <h3>AI &amp; ML Concepts</h3>
+              <p>Models, learning systems</p>
+            </article>
+            <article class="skill-card panel" style="--skill-color:#f59e0b">
+              <div class="skill-icon-wrap"><i class="fas fa-chart-line"></i></div>
+              <h3>Data Analysis</h3>
+              <p>Pattern recognition &amp; insights</p>
+            </article>
+            <article class="skill-card panel" style="--skill-color:#10b981">
+              <div class="skill-icon-wrap"><i class="fas fa-lightbulb"></i></div>
+              <h3>Behavioral Psychology</h3>
+              <p>Decision-making frameworks</p>
+            </article>
+            <article class="skill-card panel" style="--skill-color:#06b6d4">
+              <div class="skill-icon-wrap"><i class="fas fa-code"></i></div>
+              <h3>Problem Solving</h3>
+              <p>Logic, structure &amp; strategy</p>
+            </article>
+            <article class="skill-card panel" style="--skill-color:#8b5cf6">
+              <div class="skill-icon-wrap"><i class="fas fa-comments"></i></div>
+              <h3>Communication</h3>
+              <p>Clarity in ideas &amp; writing</p>
+            </article>
+          </div>
+
+          <div class="page-header" style="margin-top:48px">
+            <span class="section-label">03 / Interests</span>
+            <h2>Core <span class="gradient-text">Learning Areas</span></h2>
+            <p>The three domains that shape my thinking</p>
+          </div>
+          <div class="interests-grid">
+            <article class="interest-card panel">
+              <div class="interest-icon-wrap"><i class="fas fa-brain"></i></div>
+              <h3>AI &amp; ML</h3>
+              <p>Exploratory research in AI fears, prompt engineering, and basic coding-to-be practical solutions and intelligent automation.</p>
+              <button class="interest-link" data-nav="projects">Learn More <i class="fas fa-arrow-right"></i></button>
+            </article>
+            <article class="interest-card panel">
+              <div class="interest-icon-wrap"><i class="fas fa-chart-line"></i></div>
+              <h3>Financial Markets</h3>
+              <p>Learning market dynamics, price action, and developing each analytical frameworks — Forex &amp; technical analysis.</p>
+              <button class="interest-link" data-nav="projects">Learn More <i class="fas fa-arrow-right"></i></button>
+            </article>
+            <article class="interest-card panel">
+              <div class="interest-icon-wrap"><i class="fas fa-chart-bar"></i></div>
+              <h3>Data Analysis</h3>
+              <p>Using data to identify patterns, inform decision-making, and create sense out of complex behavioral systems.</p>
+              <button class="interest-link" data-nav="projects">Learn More <i class="fas fa-arrow-right"></i></button>
+            </article>
+          </div>
+        </section>
+
+        <!-- JOURNEY -->
+        <section class="view" id="view-journey" data-view="journey">
+          <div class="page-header">
+            <span class="section-label">05 / Journey</span>
+            <h2>Learning <span class="gradient-text">Journey</span></h2>
+            <p>The path of curiosity, one step at a time</p>
+          </div>
+          <div class="timeline">
+            <div class="timeline-line"></div>
+            <div class="timeline-item right timeline-future">
+              <div class="timeline-content panel">
+                <div class="timeline-year">Future</div>
+                <h3><i class="fas fa-rocket"></i> What’s Next</h3>
+                <p>Deepening expertise in machine learning, quantitative finance, and applying behavioral psychology to real-world systems.</p>
+              </div>
+              <div class="timeline-dot timeline-dot-pulse"></div>
+            </div>
+            <div class="timeline-item left">
+              <div class="timeline-content panel">
+                <div class="timeline-year">2025 — Now</div>
+                <h3><i class="fas fa-cogs"></i> Algorithmic Goals</h3>
+                <p>Working toward building algorithmic trading systems and data-driven decision frameworks combining AI with market analysis.</p>
+              </div>
+              <div class="timeline-dot"></div>
+            </div>
+            <div class="timeline-item right">
+              <div class="timeline-content panel">
+                <div class="timeline-year">2025 — Now</div>
+                <h3><i class="fas fa-robot"></i> Vibe Coding</h3>
+                <p>Diving deep into vibe coding — shaping modern software via high-level intent, rapid prototyping, and AI-driven development lifecycles.</p>
+              </div>
+              <div class="timeline-dot"></div>
+            </div>
+            <div class="timeline-item left">
+              <div class="timeline-content panel">
+                <div class="timeline-year">2025 — Now</div>
+                <h3><i class="fas fa-robot"></i> Prompt Engineering</h3>
+                <p>Studying how to communicate effectively with LLMs — chain-of-thought, few-shot prompting, and structured AI reasoning.</p>
+              </div>
+              <div class="timeline-dot"></div>
+            </div>
+            <div class="timeline-item right">
+              <div class="timeline-content panel">
+                <div class="timeline-year">2025 — Now</div>
+                <h3><i class="fab fa-python"></i> Python</h3>
+                <p>Began exploring Python for data science, automation, and AI workflows. From fundamentals to libraries like pandas and numpy.</p>
+              </div>
+              <div class="timeline-dot"></div>
+            </div>
+            <div class="timeline-item left">
+              <div class="timeline-content panel">
+                <div class="timeline-year">2024 — Now</div>
+                <h3><i class="fas fa-chart-line"></i> Trading</h3>
+                <p>Started studying markets, technical analysis, candlestick patterns, and risk management. Building disciplined market intuition.</p>
+              </div>
+              <div class="timeline-dot"></div>
+            </div>
+            <div class="timeline-item right">
+              <div class="timeline-content panel">
+                <div class="timeline-year">2022 — Now</div>
+                <h3><i class="fas fa-globe"></i> Webpage</h3>
+                <p>Began studying how to create webpage and how to deploy them. learning from basic to advance. Also the starting of my Tech Career</p>
+              </div>
+              <div class="timeline-dot"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="view" id="view-contact" data-view="contact">
+          <div class="page-header">
+            <span class="section-label">06 / Contact</span>
+            <h2>Let’s <span class="gradient-text">Connect</span></h2>
+            <p>Have a question, idea, or just want to say hi? Drop a message.</p>
+          </div>
+          <div class="contact-grid">
+            <div class="contact-info panel">
+              <h3>Reach out through any channel</h3>
+              <p>I’m always open to conversations about AI, markets, learning, or interesting ideas. Let’s build something meaningful together.</p>
+              <div class="contact-items">
+                <a href="https://www.linkedin.com/in/krishal-poudel-601952396?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener" class="contact-item">
+                  <div class="contact-item-icon"><i class="fab fa-linkedin-in"></i></div>
+                  <div class="contact-item-info"><span>LinkedIn</span><strong>krishal-poudel</strong></div>
+                </a>
+                <a href="mailto:krishalp660812@gmail.com" class="contact-item">
+                  <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+                  <div class="contact-item-info"><span>Email</span><strong>krishalp660812@gmail.com</strong></div>
+                </a>
+                <a href="https://github.com/Krishal-Tech" target="_blank" rel="noopener" class="contact-item">
+                  <div class="contact-item-icon"><i class="fab fa-github"></i></div>
+                  <div class="contact-item-info"><span>GitHub</span><strong>Krishal-Tech</strong></div>
+                </a>
+                <a href="https://www.facebook.com/share/1GJ61K62F1/" target="_blank" rel="noopener" class="contact-item">
+                  <div class="contact-item-icon"><i class="fab fa-facebook-f"></i></div>
+                  <div class="contact-item-info"><span>Facebook</span><strong>Connect on Facebook</strong></div>
+                </a>
+                <a href="https://www.instagram.com/krishalpoudel10?igsh=MWh1MzRycW1qZHVsag" target="_blank" rel="noopener" class="contact-item">
+                  <div class="contact-item-icon"><i class="fab fa-instagram"></i></div>
+                  <div class="contact-item-info"><span>Instagram</span><strong>@krishalpoudel10</strong></div>
+                </a>
+                <div class="contact-item">
+                  <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
+                  <div class="contact-item-info"><span>Location</span><strong>Chitwan, Nepal 🇳🇵</strong></div>
+                </div>
+              </div>
+            </div>
+            <form class="contact-form panel" id="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <input type="text" id="name" name="name" required placeholder=" " />
+                  <label for="name">Full Name</label>
+                </div>
+                <div class="form-group">
+                  <input type="email" id="email" name="email" required placeholder=" " />
+                  <label for="email">Email Address</label>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <input type="tel" id="mobile" name="mobile" placeholder=" " />
+                  <label for="mobile">Mobile Number</label>
+                </div>
+                <div class="form-group">
+                  <input type="text" id="subject" name="subject" required placeholder=" " />
+                  <label for="subject">Subject</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+                <label for="message">Your Message</label>
+              </div>
+              <button type="submit" class="btn btn-primary btn-submit" id="submit">
+                <span>Send Message</span>
+                <i class="fas fa-paper-plane"></i>
+              </button>
+              <div class="form-note" id="form-note"></div>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer class="app-footer">
+        <p>© 2026 Krishal Poudel. All rights reserved.</p>
+        <div class="footer-links">
+          <button data-nav="home">Home</button>
+          <button data-nav="projects">Projects</button>
+          <button data-nav="about">About</button>
+          <button data-nav="skills">Skills</button>
+          <button data-nav="journey">Journey</button>
+          <button data-nav="contact">Contact</button>
+        </div>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/krishal-poudel-601952396?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:krishalp660812@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://github.com/Krishal-Tech" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.facebook.com/share/1GJ61K62F1/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/krishalpoudel10?igsh=MWh1MzRycW1qZHVsag" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
